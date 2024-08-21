@@ -1,0 +1,21 @@
+#include <iostream>
+
+int main() {
+    int num;
+    long long fatorial = 1; // Usamos long long para suportar números grandes
+    
+    std::cout << "Digite um número inteiro positivo: ";
+    std::cin >> num;
+    
+    if (num < 0) {
+        std::cout << "Número inválido! O número deve ser positivo." << std::endl;
+        return 1;
+    }
+    
+    for (int i = 1; i <= num; ++i) {
+        fatorial *= i;
+    }
+    
+    std::cout << "O fatorial de " << num << " é: " << fatorial << std::endl;
+    return 0;
+}

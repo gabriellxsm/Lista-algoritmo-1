@@ -1,0 +1,12 @@
+#include <iostream>
+#include <unistd.h> // Para sleep() em sistemas Unix-like (opcional)
+
+int main() {
+    for (int i = 10; i >= 1; --i) {
+        std::cout << i << std::endl;
+        sleep(1); // Pausa de 1 segundo entre os números (opcional)
+    }
+    
+    std::cout << "Fim da contagem!" << std::endl;
+    return 0;
+}

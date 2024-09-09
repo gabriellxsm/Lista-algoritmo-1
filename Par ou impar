@@ -1,16 +1,17 @@
-#include <iostream>
+#include <stdio.h>
 
-int main() {
-    int num;
-    
-    std::cout << "Digite um número: ";
-    std::cin >> num;
-    
-    if (num % 2 == 0) {
-        std::cout << "O número é par." << std::endl;
+int main (){
+	int numero;
+	int par, impar;
+	
+	printf("digite um numero:");
+	scanf("%d", &numero);
+	
+	  if (numero % 2 == 0) {
+        printf("O número %d é par.\n", numero);
     } else {
-        std::cout << "O número é ímpar." << std::endl;
+        printf("O número %d é ímpar.\n", numero);
     }
-    
-    return 0;
+
+
 }

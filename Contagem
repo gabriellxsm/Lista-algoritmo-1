@@ -1,12 +1,14 @@
-#include <iostream>
-#include <unistd.h> // Para sleep() em sistemas Unix-like (opcional)
+#include <stdio.h>
 
 int main() {
-    for (int i = 10; i >= 1; --i) {
-        std::cout << i << std::endl;
-        sleep(1); // Pausa de 1 segundo entre os números (opcional)
+    int i;
+
+    printf("Contagem regressiva:\n");
+    for (i = 10; i >= 1; i--) {
+        printf("%d\n", i);
     }
-    
-    std::cout << "Fim da contagem!" << std::endl;
+
+    printf("Feliz Ano Novo!\n");
+
     return 0;
 }
